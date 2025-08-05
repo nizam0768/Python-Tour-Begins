@@ -1,3 +1,4 @@
+import datetime
 # String Slicing
 
 str = "GeeksforGeeks"
@@ -49,3 +50,14 @@ print(s[:-3])
 print(s[-5:-2])  # Output: vwx
 print(s[-8:-1:3])
 print(s[::-1])
+
+# Print Variables using f-strings
+
+today = datetime.datetime.today()
+print(f"{today: %B %d, %Y}")
+
+english = 78
+maths = 56
+hindi = 85
+
+print(f"Ram got total marks {english + maths + hindi} out of 300")
