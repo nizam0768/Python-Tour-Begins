@@ -61,3 +61,14 @@ maths = 56
 hindi = 85
 
 print(f"Ram got total marks {english + maths + hindi} out of 300")
+print(f"newline: {ord('\n')}")
+print(f"{{{{Hello, Mohammad}}}}")
+print(f"{{Hello, Geek}}")
+
+# Printing Dictionaries
+student = {
+    "name": "John",
+    "age": 20,
+    "course": "Computer Science"
+}
+print(f"name of student {student['name']} is {student['age']} years olg. He is studying {student['course']}.")
