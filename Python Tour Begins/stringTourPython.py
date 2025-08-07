@@ -72,3 +72,10 @@ student = {
     "course": "Computer Science"
 }
 print(f"name of student {student['name']} is {student['age']} years olg. He is studying {student['course']}.")
+
+#del from string
+strDel = "Hello, World!"
+
+del strDel  # This will delete the string variable
+# Uncommenting the next line will raise an error because strDel is deleted
+# print(strDel)  # Raises NameError: name 'strDel' is not defined   
