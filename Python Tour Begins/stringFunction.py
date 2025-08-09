@@ -12,5 +12,17 @@ print(sentence1.replace("Khan", "Khan Academy"))  # Output: My Name is Khan Acad
 print(sentence1.split())  # Output: ['My', 'Name', 'is', 'Khan.', 'Embarking', 'on', 'a', 'new', 'journey.']
 print(sentence1.split(" "))  # Output: ['My', 'Name', 'is', 'Khan.', 'Embarking', 'on', 'a', 'new', 'journey.']
 print(sentence1.split("a"))  # Output: ['My N', 'me is Khan. Emb', 'rking on ', ' new journey.']
-print(sentence2.count("e"))  # Output: 5
+#print(sentence2.count("e"))  # Output: 5
 #print(sentence2.find("software"))  # Output: 10
+
+
+# Python string format methods
+a = "My nam is khan"
+b = 25
+msg = "{} and I am {} years old.".format(a,b)
+print(msg)
+def formatted_table(a, b):
+    for i in range(a, b):
+        print("{:6d} {:6d} {:6d} {:6d}".format(i, i**2, i**3, i**4))
+
+formatted_table(3, 10)
