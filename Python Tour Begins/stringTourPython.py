@@ -79,3 +79,7 @@ strDel = "Hello, World!"
 del strDel  # This will delete the string variable
 # Uncommenting the next line will raise an error because strDel is deleted
 # print(strDel)  # Raises NameError: name 'strDel' is not defined   
+
+s = "hello"
+a = [*s]
+print(a)
