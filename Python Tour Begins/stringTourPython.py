@@ -83,3 +83,23 @@ del strDel  # This will delete the string variable
 s = "hello"
 a = [*s]
 print(a)
+
+# Python PASS
+def my_function():
+    pass  # Function body to be implemented later
+
+class MyClass:
+    pass  # Empty class definition
+
+for x in range(10):
+    pass  # No action required for each iteration
+
+#recursion function
+
+def tail_fact(n, acc = 1):
+    #Base case
+    if n == 0:
+        return acc
+    else:
+        return tail_fact(n-1, acc*n)
+print(tail_fact(5))  # Output: 120
