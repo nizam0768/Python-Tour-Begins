@@ -13,3 +13,15 @@ rotate_array(arr, d)
 
 for i in range(len(arr)):
     print(arr[i], end=" ")
+
+print()
+# Wave array
+def wave_array(arr):
+    n = len(arr)
+    for i in range(0, n-1, 2):
+        if i < n-1 and arr[i] < arr[i+1]:
+            arr[i], arr[i+1] = arr[i+1], arr[i]
+    return arr
+
+arr = [1, 2, 3, 4, 5]
+print(wave_array(arr), end=" ")
