@@ -25,3 +25,21 @@ def wave_array(arr):
 
 arr = [1, 2, 3, 4, 5]
 print(wave_array(arr), end=" ")
+
+# Python Program to solve stock buy and sell by  
+# exploring all possible pairs
+
+def max_profit(prices):
+    n = len(prices)
+    res = 0
+
+    # Explore all possible ways to buy and sell stock
+    for i in range(n - 1):
+        for j in range(i + 1, n):
+            res = max(res, prices[j] - prices[i])
+    
+    return res
+
+if __name__ == "__main__":
+    prices = [7, 10, 1, 3, 6, 9, 2]
+    print(max_profit(prices))
