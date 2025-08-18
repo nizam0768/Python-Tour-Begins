@@ -43,3 +43,27 @@ def max_profit(prices):
 if __name__ == "__main__":
     prices = [7, 10, 1, 3, 6, 9, 2]
     print(max_profit(prices))
+
+# Python program to find the digit sum by 
+# repetitively Adding its digits
+
+def singleDigit(n):
+    sum = 0
+
+    # Repetitively calculate sum until
+    # it becomes single digit
+    while n > 0 or sum > 9:
+
+        # If n becomes 0, reset it to sum 
+        # and start a new iteration
+        if n == 0:
+            n = sum
+            sum = 0
+
+        sum += n % 10
+        n //= 10
+    return sum
+
+if __name__ == "__main__":
+    n = 1234
+    print(singleDigit(n))
