@@ -67,3 +67,29 @@ def singleDigit(n):
 if __name__ == "__main__":
     n = 1234
     print(singleDigit(n))
+
+    # Python Code to remove all occurrences of 
+# an element in an array
+
+def removeElement(arr, ele):
+  
+    # Initialize the counter for the 
+    # elements not equal to ele    
+    k = 0
+    for i in range(len(arr)):
+
+        # Place the element which is not 
+        # equal to ele at the kth position
+        if arr[i] != ele:
+            arr[k] = arr[i]  
+            
+            # Increment the count of 
+            # elements not equal to ele
+            k += 1             
+              
+    return k 
+  
+if __name__ == "__main__":
+    arr = [0, 1, 3, 0, 2, 2, 4, 2]
+    ele = 2
+    print(removeElement(arr, ele))
