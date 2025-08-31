@@ -28,3 +28,14 @@ print(a.count(2))
 
 # Count occurrences of 3
 print(a.count(3))
+
+a = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana']
+
+# Create a list of unique items
+b = list(set(a))
+
+# Use list comprehension to count the frequency of each unique item
+c = {item: a.count(item) for item in b}
+
+# Print the frequency of each item
+print(c)
