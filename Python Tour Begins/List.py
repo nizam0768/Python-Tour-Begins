@@ -39,3 +39,19 @@ c = {item: a.count(item) for item in b}
 
 # Print the frequency of each item
 print(c)
+
+a = [1, 3, 2, 6, 3, 2, 8, 2, 9, 2, 7, 3]
+
+# Initial count is zero
+count = 0
+
+# Iterate over the list
+for val in a:
+  
+  	# If num is equal to 3 
+	if val == 3:
+      
+        # Increase the counter
+		count += 1
+
+print(count)
