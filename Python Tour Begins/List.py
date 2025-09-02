@@ -55,3 +55,13 @@ for val in a:
 		count += 1
 
 print(count)
+
+a = [1, 2, 3, (4, 5), 6, 7]
+
+c = 0
+for element in a:
+    if isinstance(element, tuple):
+        break
+    c += 1
+
+print(c)
