@@ -4,3 +4,8 @@ class Myclass:
         print("This is a message inside a class");
 myobjectx = Myclass()
 print(myobjectx.variable)
+
+myobjectx.variable = "Brad"
+
+print(myobjectx.variable)
+
